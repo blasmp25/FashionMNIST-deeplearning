@@ -69,6 +69,7 @@ Shows which classes the model confuses the most.
 
 ## 📁 Project Structure
 
+\`\`\`
 project/
 │── src/
 │ ├── main.py
@@ -89,7 +90,7 @@ project/
 │
 │── README.md
 │── requirements.txt
-
+\`\`\`
 
 ## 🧼 Clean the project (delete models, plots, experiments, analysis)
 python src/main.py --clean
