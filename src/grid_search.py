@@ -49,12 +49,12 @@ def run_experiment(hidden_units, lr, epochs):
     
     # Save the model
     model_name = f"tinyvgg_h{hidden_units}_lr{lr}_e{epochs}.pth"
-    save_model(model, target_dir="../models", model_name=model_name)
+    save_model(model, target_dir="models", model_name=model_name)
     
     return results, model_name
 
 def main():
-    os.makedirs("../experiments", exist_ok=True)
+    os.makedirs("experiments", exist_ok=True)
     
     experiment_counter = 0
     all_results = []
@@ -79,10 +79,10 @@ def main():
         experiment_counter += 1
 
     # Save results in a JSON
-    with open("../experiments/summary.json", "w") as f:
+    with open("experiments/summary.json", "w") as f:
         json.dump(all_results, f, indent=4)
 
-    print("\nGrid search completed. Results saved in /experiments/summary.json")
+    print("\nGrid search completed. Results saved in experiments/summary.json")
     
     
 if __name__ == "__main__":

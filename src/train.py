@@ -5,7 +5,7 @@ from engine import train
 from tinyvgg import TinyVGG
 from utils import save_model
 
-NUM_EPOCHS = 1
+NUM_EPOCHS = 5
 BATCH_SIZE = 32
 HIDDEN_UNITS = 10
 LEARNING_RATE = 0.001
